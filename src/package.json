@@ -1,0 +1,14 @@
+{
+  "name": "discordaro",
+  "version": "1.0.0",
+  "description": "a discord bot for ARO",
+  "main": "main.js",
+  "scripts": {
+    "main": "node ."
+  },
+  "author": "Borecnakonec33",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.12.1"
+  }
+}
