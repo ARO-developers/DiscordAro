@@ -22,6 +22,12 @@ const client = new Client({intents: [
     ]});
 
 //funcs
+function numberWithSpaces(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return parts.join(".");
+}
+
 function table_out(jsonObject, num){
     let out_objs = []
     let out_string = ""
@@ -33,9 +39,9 @@ function table_out(jsonObject, num){
 
         let obj = {
             "label": key,
-            "number": numberOf,
-            "weight": (numberOf * value["weight"]).toFixed(2),
-            "volume": (numberOf * value["volume"]).toFixed(2),
+            "number": numberWithSpaces(numberOf),
+            "weight": numberWithSpaces((numberOf * value["weight"]).toFixed(2)),
+            "volume": numberWithSpaces((numberOf * value["volume"]).toFixed(2)),
             "density": value["density"] 
         }
 
@@ -46,10 +52,10 @@ function table_out(jsonObject, num){
 
     //final output
     if (out_objs[rand_choice].volume == out_objs[rand_choice].weight){
-        out_string = `${num.toString()}kč? To je přesně ${out_objs[rand_choice].number} kusů ${out_objs[rand_choice].label}.\n Což je ${out_objs[rand_choice].volume} litrů!`
+        out_string = `${numberWithSpaces(num)}kč? To je přesně ${out_objs[rand_choice].number} kusů ${out_objs[rand_choice].label}.\n Což je ${out_objs[rand_choice].volume} litrů!`
     }
     else{
-        out_string = `${num.toString()}kč? To je přesně ${out_objs[rand_choice].number} kusů ${out_objs[rand_choice].label}.\n Což je ${out_objs[rand_choice].volume} litrů nebo ${out_objs[rand_choice].weight} kilogramů!`
+        out_string = `${numberWithSpaces(num)}kč? To je přesně ${out_objs[rand_choice].number} kusů ${out_objs[rand_choice].label}.\n Což je ${out_objs[rand_choice].volume} litrů nebo ${out_objs[rand_choice].weight} kilogramů!`
     }
     return out_string
 }
