@@ -1,8 +1,38 @@
 {
-    "aro vody": 4.5,
-    "aro tvarohu": 17.5,
-    "aro maku": 45.9,
-    "aro kecupu": 239,
-    "aro horcice": 189,
-    "aro naplne": 229
+    "aro vody": {
+        "value": 4.5,
+        "weight": 1.5,
+        "volume": 1.5,
+        "density": 1000
+    },
+    "aro tvarohu": {
+        "value": 17.5,
+        "weight": 0.25,
+        "volume": 0.25,
+        "density": 1000
+    },
+    "aro máku": {
+        "value": 45.9,
+        "weight": 0.3,
+        "volume": 0.18,
+        "density": 600
+    },
+    "aro kečupu": {
+        "value": 239,
+        "weight": 10,
+        "volume": 7.14,
+        "density": 1400
+    },
+    "aro hořčice": {
+        "value": 189,
+        "weight": 10,
+        "volume": 10,
+        "density": 1000
+    },
+    "aro povidel": {
+        "value": 229,
+        "weight": 4,
+        "volume": 2.85,
+        "density": 1400
+    }
 }

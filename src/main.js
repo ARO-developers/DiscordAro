@@ -3,6 +3,14 @@ const { Client, GatewayIntentBits } = require('discord.js');
 
 //defs
 var key = JSON.parse(fs.readFileSync("./key.json"))["key"]
+
+//weight is in kg
+//density is in kg/m3
+//volume is in l
+// 
+// d = w / v
+//
+
 var data = JSON.parse(fs.readFileSync("./data.json"))
 var prefix = "-!"
 
@@ -15,19 +23,34 @@ const client = new Client({intents: [
 
 //funcs
 function table_out(jsonObject, num){
-    let out_vals = []
-    let out_labels = []
+    let out_objs = []
     let out_string = ""
 
     for (const [key, value] of Object.entries(jsonObject)) {
-        out_vals.push((num / value).toFixed(2))
-        out_labels.push(key)
+        //out_vals.push((num / value).toFixed(2))
+        //out_labels.push(key)
+        let numberOf = (num / value["value"]).toFixed(2)
+
+        let obj = {
+            "label": key,
+            "number": numberOf,
+            "weight": (numberOf * value["weight"]).toFixed(2),
+            "volume": (numberOf * value["volume"]).toFixed(2),
+            "density": value["density"] 
+        }
+
+        out_objs.push(obj)
     }
 
-    let rand_choice = Math.floor(Math.random() * out_labels.length)
+    let rand_choice = Math.floor(Math.random() * out_objs.length)
 
     //final output
-    out_string = num.toString() + "kč? To je přesně " + out_vals[rand_choice].toString() + " kusů " + out_labels[rand_choice] + "!"
+    if (out_objs[rand_choice].volume == out_objs[rand_choice].weight){
+        out_string = `${num.toString()}kč? To je přesně ${out_objs[rand_choice].number} kusů ${out_objs[rand_choice].label}.\n Což je ${out_objs[rand_choice].volume} litrů!`
+    }
+    else{
+        out_string = `${num.toString()}kč? To je přesně ${out_objs[rand_choice].number} kusů ${out_objs[rand_choice].label}.\n Což je ${out_objs[rand_choice].volume} litrů nebo ${out_objs[rand_choice].weight} kilogramů!`
+    }
     return out_string
 }
 
