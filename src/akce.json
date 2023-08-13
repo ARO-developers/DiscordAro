@@ -1,10 +1,8 @@
 {
     "ARO Vejce vel. M volná chlaz. 1x180ks": {
         "Cena za balení": "652,05 Kč",
-        "Cena za jednotku": "62,46 Kč"
-    },
-    "ARO Párky vídeňské chlaz. váž. 1x cca 2kg": {
-        "Cena za jednotku": "126,39 Kč"
+        "Cena za jednotku": "62,46 Kč",
+        "Cena za kus": "3,62 Kč"
     },
     "ARO Hot Dog chlaz. váž. 24x cca 50g": {
         "Cena za jednotku": "82,80 Kč"
@@ -21,51 +19,72 @@
     "ARO Nářez z kýty konzumní velký chlaz. váž. 1x cca 3kg": {
         "Cena za jednotku": "119,60 Kč"
     },
+    "ARO Nářez z kýty plátky chlaz. 1x1kg": {
+        "Cena za balení": "132,14 Kč",
+        "Cena za jednotku": "132,14 Kč",
+        "Cena za kus": "132,14 Kč"
+    },
+    "ARO Dušená šunka Standard plátky chlaz. 1x1kg": {
+        "Cena za balení": "148,35 Kč",
+        "Cena za jednotku": "148,35 Kč",
+        "Cena za kus": "148,35 Kč"
+    },
     "ARO Kýta uzená bez kosti 60 chlaz. váž. 1x cca 1,25kg": {
         "Cena za jednotku": "159,85 Kč"
     },
     "Maliny mraž. 1x2,5kg": {
         "Cena za balení": "287,21 Kč",
-        "Cena za jednotku": "114,89 Kč"
+        "Cena za jednotku": "114,89 Kč",
+        "Cena za kus": "287,21 Kč"
     },
     "ARO Mouka polohrubá 10x1kg": {
         "Cena za balení": "159,85 Kč",
-        "Cena za jednotku": "15,99 Kč"
+        "Cena za jednotku": "15,99 Kč",
+        "Cena za kus": "15,99 Kč"
     },
     "ARO Mouka hladká pšeničná světlá 10x1kg": {
         "Cena za balení": "159,85 Kč",
-        "Cena za jednotku": "15,99 Kč"
+        "Cena za jednotku": "15,99 Kč",
+        "Cena za kus": "15,99 Kč"
     },
     "ARO Mouka pšeničná hrubá 10x1kg": {
         "Cena za balení": "159,85 Kč",
-        "Cena za jednotku": "15,99 Kč"
+        "Cena za jednotku": "15,99 Kč",
+        "Cena za kus": "15,99 Kč"
     },
     "ARO Olej slunečnicový 1x10L PET": {
         "Cena za balení": "412,85 Kč",
-        "Cena za jednotku": "41,29 Kč"
+        "Cena za jednotku": "41,29 Kč",
+        "Cena za kus": "412,85 Kč"
     },
     "ARO Cukr krupice 10x1kg": {
         "Cena za balení": "263,93 Kč",
-        "Cena za jednotku": "26,39 Kč"
+        "Cena za jednotku": "26,39 Kč",
+        "Cena za kus": "26,39 Kč"
     },
     "Lapač hmyzu ARO IK1017 1ks": {
         "Cena za balení": "336,38 Kč",
-        "Cena za jednotku": "336,38 Kč"
+        "Cena za jednotku": "336,38 Kč",
+        "Cena za kus": "336,38 Kč"
     },
     "ARO Klimatizace mobilní MAC1510C 1 ks": {
         "Cena za balení": "2 901,58 Kč",
-        "Cena za jednotku": "2 901,58 Kč"
+        "Cena za jednotku": "2 901,58 Kč",
+        "Cena za kus": "2 901,58 Kč"
     },
     "ARO Ventilátor stolní DF2223 22 cm 1 ks": {
         "Cena za balení": "287,98 Kč",
-        "Cena za jednotku": "287,98 Kč"
+        "Cena za jednotku": "287,98 Kč",
+        "Cena za kus": "287,98 Kč"
     },
     "ARO Ventilátor stolní DF2919 29 cm 1 ks": {
         "Cena za balení": "360,58 Kč",
-        "Cena za jednotku": "360,58 Kč"
+        "Cena za jednotku": "360,58 Kč",
+        "Cena za kus": "360,58 Kč"
     },
     "ARO Ventilátor stolní DF3619 36 cm 1 ks": {
         "Cena za balení": "445,28 Kč",
-        "Cena za jednotku": "445,28 Kč"
+        "Cena za jednotku": "445,28 Kč",
+        "Cena za kus": "445,28 Kč"
     }
 }
