@@ -9,6 +9,7 @@
   "author": "Borecnakonec33",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.12.1"
+    "discord.js": "^14.12.1",
+    "puppeteer": "^21.0.3"
   }
 }

@@ -1,5 +1,6 @@
 const fs = require("fs")
 const { Client, GatewayIntentBits } = require('discord.js');
+const { fetch_data } = require("./parse")
 
 //defs
 var key = JSON.parse(fs.readFileSync("./key.json"))["key"]
@@ -36,6 +37,9 @@ function table_out(jsonObject, num){
         //out_vals.push((num / value).toFixed(2))
         //out_labels.push(key)
         let numberOf = (num / value["value"]).toFixed(2)
+        if(numberOf == undefined){
+            continue
+        }
 
         let obj = {
             "label": key,
@@ -49,6 +53,10 @@ function table_out(jsonObject, num){
     }
 
     let rand_choice = Math.floor(Math.random() * out_objs.length)
+
+    if (num == undefined){
+        return
+    }
 
     //final output
     if (out_objs[rand_choice].volume == out_objs[rand_choice].weight){
@@ -69,6 +77,25 @@ client.on("messageCreate", message => {
     if (message.author.bot) return;
     if (message.content.startsWith(prefix)){
         //specified commands
+        //fetch new data
+        fetch_data()
+        var sale = JSON.parse(fs.readFileSync("./akce.json"))
+        var message_split = message.content.split(" ")
+        console.log(message_split)
+
+        if (message.content.split(" ")[0] == prefix + "akce"){
+            let random = Math.round(Math.random() * Object.keys(sale).length)
+
+            let iter = 0;
+            for (const [key, value] of Object.entries(sale)) {
+                iter += 1
+
+                if (random == iter){
+                    message.reply(`Hej! Víš že teď má makro v akci ${key} za ${value["Cena za jednotku"]}?`)
+                }
+            }
+        }
+
     }
     else{
         //aro
@@ -84,7 +111,9 @@ client.on("messageCreate", message => {
         let num = result[0]
         let out = table_out(data, num)
 
-        message.reply(out)
+        if (out != undefined){
+            message.reply(out)
+        }
     }
 });
 

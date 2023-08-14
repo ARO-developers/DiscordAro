@@ -4,6 +4,9 @@
         "Cena za jednotku": "62,46 Kč",
         "Cena za kus": "3,62 Kč"
     },
+    "ARO Párky vídeňské chlaz. váž. 1x cca 2kg": {
+        "Cena za jednotku": "126,39 Kč"
+    },
     "ARO Hot Dog chlaz. váž. 24x cca 50g": {
         "Cena za jednotku": "82,80 Kč"
     },
@@ -42,11 +45,6 @@
         "Cena za jednotku": "15,99 Kč",
         "Cena za kus": "15,99 Kč"
     },
-    "ARO Mouka hladká pšeničná světlá 10x1kg": {
-        "Cena za balení": "159,85 Kč",
-        "Cena za jednotku": "15,99 Kč",
-        "Cena za kus": "15,99 Kč"
-    },
     "ARO Mouka pšeničná hrubá 10x1kg": {
         "Cena za balení": "159,85 Kč",
         "Cena za jednotku": "15,99 Kč",
@@ -66,16 +64,6 @@
         "Cena za balení": "336,38 Kč",
         "Cena za jednotku": "336,38 Kč",
         "Cena za kus": "336,38 Kč"
-    },
-    "ARO Klimatizace mobilní MAC1510C 1 ks": {
-        "Cena za balení": "2 901,58 Kč",
-        "Cena za jednotku": "2 901,58 Kč",
-        "Cena za kus": "2 901,58 Kč"
-    },
-    "ARO Ventilátor stolní DF2223 22 cm 1 ks": {
-        "Cena za balení": "287,98 Kč",
-        "Cena za jednotku": "287,98 Kč",
-        "Cena za kus": "287,98 Kč"
     },
     "ARO Ventilátor stolní DF2919 29 cm 1 ks": {
         "Cena za balení": "360,58 Kč",

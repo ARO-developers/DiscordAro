@@ -22,7 +22,7 @@ async function scrape(page, adr) {
     }
 }
 
-async function main() {
+async function fetch_data() {
     const browser = await puppeteer.launch({});
     const page = await browser.newPage();
 
@@ -40,4 +40,4 @@ async function main() {
     });
 }
 
-main();
+module.exports = {fetch_data}
